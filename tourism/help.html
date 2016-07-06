@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+	<title>新手帮助</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/group.css">
+</head>
+<body>
+	<div class="box">
+		<header class="header">
+			<a href="more.html" class="left"></a>
+			<h1>新手帮助</h1>
+		</header>
+		<div class="main" id="main">
+			<div>
+				<div class="about_text">
+					<h3>新手帮助</h3>
+					<p>底部菜单功能切换：个人中心（管理个人信息、查看评论）、收藏（查看和管理您的收藏的信息）、首页、搜索、设置；</p>
+					<p>全站搜索功能：根据输入您所输入的关键词进入信息列表，方便快捷；</p>
+					<p>详细页右上角的数字按钮，代表当前的评论数，点击可查看评论列表；</p>
+					<p>点击详细页输入框右侧的图标，可将资讯分享至腾讯微博或新浪微博；</p>
+					<p>屏幕左上角的箭头图标，点击后返回上一级页面；</p>
+					<p>频道页顶部的菜单可以通过滑动进行切换。</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script src="js/setfontsize.js"></script>
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/iscroll4.js"></script>
+    <script>
+	      var menuPage=new iScroll("main",{
+	      onBeforeScrollStart:function(e){
+	        var tagName=e.target.nodeName.toLowerCase();
+	        if(tagName!="input" && tagName!="select" && tagName!="textarea" && tagName!="a"){
+	          e.preventDefault(); 
+	           }   
+	         }
+	      })
+     
+
+    </script>
+</html>

@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+	<title>最佳旅行时间详情页面</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/group.css">
+</head>
+<body>
+	<div class="box">
+		<header class="header">
+			<a href="best.html" class="left"></a>
+			<h1>详情</h1>
+			<a href="" class="right right1"></a>
+			<img src="img/1.png" alt="" class="shoucang" id="favBtn">
+		</header>
+		<div class="main" id="main">
+			<div>
+				<div class="traver_xq">
+					<h4 id="title">云南旅游最佳月份/时间与最佳季节</h4>
+					<p>
+						<span>2016-05-19 09:57</span><small>热门</small>
+					</p>
+					<ul>
+						<li><a href="">　　云南旅游最佳月份，一般来说四季都合适，不过很多游客都不喜欢这个答案，总是还要问几月份好，呵呵。那么我们就来看看下面景点的好点时间介绍吧。</a></li>
+						<li><a href="">　　云南昆明旅游网最佳月份，昆明全年适合旅游，好的旅游时间在3-10月，这是云南少数民族节日多的时候，也是水果，鲜花多的季节，旅游的收获当然不会小。</a></li>
+						<li><a href="">　　云南丽江旅游最佳月份是几月，事实上，丽江旅游主要以民俗文化为主，体验当地的生活方式，因此季节对丽江旅游影响不大。可以说，丽江天天都是好时光。大理与丽江差不多，不过大理有一句话说得明显----大理三月好风光。</a></li>
+						<li><a href="">　　云南西双版纳旅游最佳月份，西双版纳地区属于热带雨林气候，夏无酷暑，冬无严寒，四季温暖宜人，好点的旅游时间在10月至次年6月。</a></li>
+						<li><a href="">　　云南香格里拉旅游最佳月份是几月，春季是前往这里的旅游好的季节，气候适中，草讯上繁花似锦，景致迷人，香格里拉高原的秋天是精彩的瞬间，她庆地区在中秋节过后10天左右的20多天时间里，高原上满目秋色。此时探访属都湖，小中旬，白茫雪地等地，景色都好极了！</a></li>
+					</ul>
+					<h5>热门评论</h5>
+					<p><span>暂无相关评论</span></p>
+				</div>
+			</div>
+		</div>
+		<footer class="footer footer2">
+			<p><input type="text" placeholder="说点什么吧"><label for="">发表</label></p>
+		</footer>
+	</div>
+</body>
+<script src="js/setfontsize.js"></script>
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script src="js/iscroll4.js"></script>
+<script src="js/shouc.js"></script>
+    <script>
+	      var menuPage=new iScroll("main",{
+	      onBeforeScrollStart:function(e){
+	        var tagName=e.target.nodeName.toLowerCase();
+	        if(tagName!="input" && tagName!="select" && tagName!="textarea" && tagName!="a"){
+	          e.preventDefault(); 
+	           }   
+	         }
+
+	      })
+          
+
+    </script>
+</html>

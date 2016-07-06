@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+	<title>服务电话详情页面</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/group.css">
+</head>
+<body>
+	<div class="box">
+		<header class="header">
+			<a href="phone.html" class="left"></a>
+			<h1>详情</h1>
+			<a href="" class="right right1"></a>
+			<img src="img/1.png" alt="" class="shoucang" id="favBtn">
+		</header>
+		<div class="main" id="main">
+			<div>
+				<div class="traver_xq">
+					<h4 id="title">申通快递</h4>
+					<p>
+						<span>2016-05-19 10:15</span><small>热门</small>
+					</p>
+					<ul>
+						<li><a href="">申通快递</a></li>
+						<li><a href="">电话号码是：</a></li>
+						<li><a href="">0871-63984153</a></li>
+					</ul>
+					<h5>热门评论</h5>
+					<p><span>暂无相关评论</span></p>
+				</div>
+			</div>
+		</div>
+		<footer class="footer footer2">
+			<p><input type="text" placeholder="说点什么吧"><label for="">发表</label></p>
+		</footer>
+	</div>
+</body>
+<script src="js/setfontsize.js"></script>
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script src="js/iscroll4.js"></script>
+<script src="js/shouc.js"></script>
+    <script>
+	      var menuPage=new iScroll("main",{
+	      onBeforeScrollStart:function(e){
+	        var tagName=e.target.nodeName.toLowerCase();
+	        if(tagName!="input" && tagName!="select" && tagName!="textarea" && tagName!="a"){
+	          e.preventDefault(); 
+	           }   
+	         }
+
+	      })
+          
+
+    </script>
+</html>

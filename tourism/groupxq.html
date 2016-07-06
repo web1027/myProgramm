@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+	<title>昆明团购详情页面</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/group.css">
+</head>
+<body>
+	<div class="box">
+	     <header class="header">
+			<a href="group.html" class="left"></a>
+			<h1>详情</h1>
+			<a href="" class="right right1"></a>
+			<img src="img/1.png" alt="" class="shoucang" id='favBtn'>
+		</header>
+		<div class="main" id="main">
+			<div>
+				<dl class="xq_item">
+					<dt><img src="img/group_1.png" alt=""></dt>
+					<dd>
+					   <ul class="xq_price">
+						   <li class="on"><a href="">0.0元</a></li>
+						   <li><a href="">0.0元</a></li>
+						   <li><a href="">NaN折</a></li>
+					   </ul>
+					   <h2 id="title">云南鲜花饼</h2>
+					   <p>剩余时间：5天<span>立即购买</span></p>
+					</dd>
+				</dl>
+				<div class="xq_list">
+					<div class="list_text">
+						<h3><span></span>商品介绍</h3>
+						<p>　　　鲜花饼是一款以云南特有的食用玫瑰花入料的酥饼，是以“花味、云南味”为特色的云南经典点心代表。鲜花饼在云南当地烘焙品牌大都均有销售，其中以嘉华饼屋最富盛名。每年4月，等待鲜花饼的上市早已成为当地人民的共同期待，排 着长队等待购买新鲜上市的鲜花饼早已成为司空见惯的景象。</p>
+
+					　　<p>　　据史料记载，鲜花饼早在300多年的清代由一位制饼师傅创造，由于鲜花饼具有花香沁心、甜而不腻、养颜美容的特点，而广为流传，从西南的昆明到北方的天津均有所见。晚清时的《燕京岁时录》记载：“四月以玫瑰花为之者，谓之玫瑰饼。以藤萝花为之者，谓之藤萝饼。皆应时之食物也。”食用玫瑰花的花期有限，而这种饼只用食用玫瑰花的花瓣，这也是鲜花饼颇显珍贵的一个原因。随着鲜花饼名声的日益升华，经朝内1的进贡，使之一跃成为宫廷御点，并深得乾隆皇帝的喜爱，并获得其钦点：“以后祭神点心用玫瑰花饼不必再奏请即可。”食材—云南特有的食用玫瑰花。</p>
+					<p>　　食用玫瑰花为蔷薇科，蔷薇属落叶灌木，在我国大部分地区均有分布，但属云南种植的最为上乘。云南素有“植物王国”、“鲜花国度”的美誉，全国七成多的鲜花产自这里，正是因为云南拥有其他区域无法比拟的优势——四季如春的气候，优质充沛的日照，得天独厚的地理位置，为食用玫瑰花的生长提供了优异条件。</p>
+					　　
+					　　<p>　　采摘：食用玫瑰花的采摘是一项十分考究的工作，必须在每天清晨伴着晨露开始采摘，采摘至上午九点前后便须结束。因为九点之后气温开始上升，鲜花的香气会随之挥发，进而影响花卉品质。</p>
+					　　<p>　　储存：采摘下的玫瑰花经过工人的初步筛选，便需进入冷库储存或通过冷藏车及时运输至用花工厂进行后期加工。</p>
+					　　<p>　　制饼：鲜花饼的大致做法是——用含苞欲放或者微微开放的玫瑰花的花瓣制作成玫瑰花馅，加之以面粉、香油、白糖、蜂蜜等配料焙烤而制成，新鲜出炉的鲜花饼酥软爽口、花香浓郁、沁人心脾。</p>
+					　　<p>　　功效—美容保健之佳品“活血理气、平肝解毒，对噤口痢、乳痈、肿毒初起、肝胃气痛”这是《本草纲目拾遗》对食用玫瑰花的疗理功效的记载。营养专家对食用玫瑰花进行微量元素分析，结果表明，食用玫瑰花比普通蔬菜含有更丰富的营养元素，具有较高的保健价值，食用玫瑰花味甘微苦、性微温，归肝、脾、胃经，芳香行散，具有舒肝解郁，和血调经的功效，是天然健康的滋补佳品。</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="footer footer2">
+			<p><input type="text" placeholder="说点什么吧"><label for="">发表</label></p>
+		</footer>
+	</div>
+</body>
+<script src="js/setfontsize.js"></script>
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script src="js/iscroll4.js"></script>
+<script src="js/shouc.js"></script>
+    <script>
+	      var menuPage=new iScroll("main",{
+	      onBeforeScrollStart:function(e){
+	        var tagName=e.target.nodeName.toLowerCase();
+	        if(tagName!="input" && tagName!="select" && tagName!="textarea" && tagName!="a"){
+	          e.preventDefault(); 
+	           }   
+	         }
+
+	      })
+          
+
+    </script>
+</html>

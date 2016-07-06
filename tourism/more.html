@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+	<title>更多</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/group.css">
+</head>
+<body>
+	<div class="box">
+		<header class="header">
+			<h1>更多</h1>
+		</header>
+		<div class="main" id="main" style="background:#F8F8F8;padding:0.26rem 0.24rem">
+			<div>
+				<ul class="more_dls">
+					<li><a href="about.html">
+						<dl>
+							<dt><img src="img/more_1.png" alt=""></dt>
+							<dd>关于我们</dd>
+						</dl>
+					</a></li>
+					<li><a href="help.html">
+						<dl>
+							<dt><img src="img/more_2.png" alt=""></dt>
+							<dd>新手帮助</dd>
+						</dl>
+					</a></li>
+					<li class="share"><a href="">
+						<dl>
+							<dt><img src="img/more_3.png" alt=""></dt>
+							<dd>软件分享</dd>
+						</dl>
+					</a></li>
+					<li><a href="feedback.html">
+						<dl>
+							<dt><img src="img/more_4.png" alt=""></dt>
+							<dd>意见反馈</dd>
+						</dl>
+					</a></li>
+					<li><a href="">
+						<dl>
+							<dt><img src="img/more_5.png" alt=""></dt>
+							<dd>新版本检测（V1.0）</dd>
+						</dl>
+					</a></li>
+					<li><a href="">
+						<dl>
+							<dt><img src="img/more_6.png" alt=""></dt>
+							<dd>扫一扫</dd>
+						</dl>
+					</a></li>
+					<li><a href="">
+						<dl>
+							<dt><img src="img/more_7.png" alt=""></dt>
+							<dd>搜索</dd>
+						</dl>
+					</a></li>
+				</ul>
+			</div>
+		</div>
+		<footer class="footer">
+			<ul>
+				<li><a href="#"><img src="img/footer_5.png"></a><br><small>首页</small></li>
+				<li><a href="#"><img src="img/footer_2.png"></a><br><small>地图</small></li>
+				<li><a href="#"><img src="img/footer_3.png"></a><br><small>会员</small></li>
+				<li class="on"><a href="#"><img src="img/footer_6.png"></a><br><small>更多</small></li>
+			</ul>
+		</footer>
+	</div>
+</body>
+<script src="js/setfontsize.js"></script>
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/iscroll4.js"></script>
+    <script>
+	      var menuPage=new iScroll("main",{
+	      onBeforeScrollStart:function(e){
+	        var tagName=e.target.nodeName.toLowerCase();
+	        if(tagName!="input" && tagName!="select" && tagName!="textarea" && tagName!="a"){
+	          e.preventDefault(); 
+	           }   
+	         }
+	      })
+     
+      $(".more_dls .share").on("click",function(e){
+      	e.preventDefault(); 
+      	$(".box").append("<div class='zhezhao'></div>");
+      	$(".box").append("<div class='share_uls'><ul><li><a class=''><dl><dt><img src='img/share_1.png' /></dt><dd>微博</dd></dl></a></li><li><a class=''><dl><dt><img src='img/share_2.png' /></dt><dd>微信</dd></dl></a></li><li><a class=''><dl><dt><img src='img/share_3.png' /></dt><dd>腾讯微博</dd></dl></a></li><li><a class=''><dl><dt><img src='img/share_4.png' /></dt><dd>QQ</dd></dl></a></li><li><a class=''><dl><dt><img src='img/share_5.png' /></dt><dd>短信</dd></dl></a></li></ul></div>")
+      })
+    </script>
+</html>

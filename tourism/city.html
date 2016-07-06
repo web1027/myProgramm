@@ -1,0 +1,64 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+	<title>城市导游</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/group.css">
+</head>
+<body>
+	<div class="box">
+		<header class="header">
+			<a href="tips.html" class="left"></a>
+			<h1>城市导游</h1>
+		</header>
+		<div class="main" id="main">
+			<div>
+				<ul class="city_uls">
+					<li><a href="">
+						<dl>
+							<dt><img src="img/city_1.png" alt=""></dt>
+							<dd>
+								<h4>寻甸回族彝族自治县</h4>
+								<p>寻甸回族彝族自治县（简称寻甸县），云南省昆明市辖区。</p>
+							</dd>
+						</dl>
+					</a></li>
+					<li><a href="">
+						<dl>
+							<dt><img src="img/city_1.png" alt=""></dt>
+							<dd>
+								<h4>寻甸回族彝族自治县</h4>
+								<p>寻甸回族彝族自治县（简称寻甸县），云南省昆明市辖区。</p>
+							</dd>
+						</dl>
+					</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+<script src="js/setfontsize.js"></script>
+<script type="text/javascript" src="js/zepto.min.js"></script> 
+<script src="js/jquery.js"></script>
+<script src="js/iscroll4.js"></script>
+<script src="js/city.js"></script>
+    <script>
+	      var menuPage=new iScroll("main",{
+	      onBeforeScrollStart:function(e){
+	        var tagName=e.target.nodeName.toLowerCase();
+	        if(tagName!="input" && tagName!="select" && tagName!="textarea" && tagName!="a"){
+	          e.preventDefault(); 
+	           }   
+	         }
+	      })
+     
+
+    </script>
+</html>

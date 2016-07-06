@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+	<title>昆明团购</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/group.css">
+</head>
+<body>
+	<div class="box">
+		<header class="header">
+			<a href="" class="left"></a>
+			<h1>昆明团购</h1>
+			<a href="" class="right"></a>
+		</header>
+		<div class="group_uls">
+			<ul>
+				<li class="on"><a href="#group_Left">土特产</a></li>
+				<li><a href="#group_Right">金银玉</a></li>
+			</ul>
+		</div>
+		<div class="main" id="main">
+			<div>
+				<section class="group_Left" id="group_Left">
+					
+				</section>
+				<section class="group_Right" id="group_Right">
+					
+				</section>
+			</div>
+		</div>
+	</div>
+</body>
+<script src="js/setfontsize.js"></script>
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script src="js/iscroll4.js"></script>
+<script src="js/group.js"></script>
+    <script>
+      var menuPage=new iScroll("main",{
+      onBeforeScrollStart:function(e){
+        var tagName=e.target.nodeName.toLowerCase();
+        if(tagName!="input" && tagName!="select" && tagName!="textarea" && tagName!="a"){
+          e.preventDefault(); 
+           }   
+         }
+      })
+     
+
+    </script>
+</html>

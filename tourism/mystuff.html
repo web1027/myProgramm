@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+	<title>会员-我的资料</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/group.css">
+</head>
+<body>
+	<div class="box">
+		<header class="header">
+			<a href="leaguer.html" class="left"></a>
+			<h1>我的资料</h1>
+			<a href="" class="right right2"><button>编辑</button></a>
+		</header>
+		<div class="main" id="main">
+			<div>
+				<div class="mystu_text">
+					<dl>
+						<dt><img src="img/touxiang.png" alt=""></dt>
+						<dd>
+							<p><label for="">昵称</label><input type="text" placeholder="请填写昵称"></p>
+							<p><label for="">性别</label><input type="radio" name="nan"> 男　　<input type="radio" name="nan"> 女</p>
+							<p><label for="">单位</label><input type="text" placeholder="请填写单位"></p>
+						</dd>
+					</dl>
+					<h3>资料详情</h3>
+					<ul>
+						<li><label for="">移动电话</label><input type="text" placeholder="请填写移动电话"></li>
+						<li><label for="">电子邮箱</label><input type="text" placeholder="请填写电子邮箱"></li>
+						<li><label for="">详细地址</label><input type="text" placeholder="请填写详细地址"></li>
+						<li><label for="">邮　　箱</label><input type="text" placeholder="请填写邮箱"></li>
+						<li><label for="">Q　　Q</label><input type="text" placeholder="请填写QQ"></li>
+						<li><label for="">微　　博</label><input type="text" placeholder="请填写微博"></li>
+						<li><label for="">个人说明</label><input type="text" placeholder="请填写个人说明（200字以内）"></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script src="js/setfontsize.js"></script>
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script src="js/iscroll4.js"></script>
+    <script>
+	      var menuPage=new iScroll("main",{
+	      onBeforeScrollStart:function(e){
+	        var tagName=e.target.nodeName.toLowerCase();
+	        if(tagName!="input" && tagName!="select" && tagName!="textarea" && tagName!="a"){
+	          e.preventDefault(); 
+	           }   
+	         }
+
+	      })
+          
+
+    </script>
+</html>

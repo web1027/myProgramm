@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+	<title>温馨提示详情页面</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/group.css">
+</head>
+<body>
+	<div class="box">
+		<header class="header">
+			<a href="tip.html" class="left"></a>
+			<h1>详情</h1>
+			<a href="" class="right right1"></a>
+			<img src="img/1.png" alt="" class="shoucang" id="favBtn">
+		</header>
+		<div class="main" id="main">
+			<div>
+				<div class="traver_xq">
+					<h4 id="title">消除旅游疲劳 六大秘籍</h4>
+					<p>
+						<span>2016-05-19 09:45</span><small>热门</small>
+					</p>
+					<p>旅途操对于消除疲劳颇有效果，做法如下：</p>
+					<ul>
+						<li><a href="">　　1.颈部伸展坐姿，双手抱头，两肘内颊夹，稍用力下压使颈部前屈，然后颈部用力尽量后仰，做8次，每次静止1至2秒。</a></li>
+						<li><a href="">　　2.肩部伸展坐姿，十指交叉上举，掌心朝上，然后由慢到快用力后振10次。</a></li>
+						<li><a href="">　　3.胸部伸展坐姿，两臂曲肘前平举含胸低头，然后两臂向侧后平行伸展，抬头挺胸，做10次。。</a></li>
+						<li><a href="">　　4.体侧伸展坐姿，一手插腰，另一手臂伸直上举，上体稍侧屈，手臂用力向侧上方伸展5次，然后换另侧做，每次静止1到2秒。</a></li>
+						<li><a href="">　　5.腰腹伸展坐姿，两手抱头，体前屈，然后上体后仰，肘关节外展，尽量把身体伸直，保持3至秒，慢速做5次。</a></li>
+						<li><a href="">　　6.腿部伸展坐姿，双腿屈膝置于胸前，然后两腿同时伸直，脚尖前伸，做10次，每次静止1至2秒。</a></li>
+					</ul>
+					<p>　　此外，快步走路也是消除疲劳的妙方。正确的方式是一定要快步走，而且要持续15到20分钟，这样才能平衡全身肌肉，帮助大脑运动，进而达到消除疲劳的目的。</p>
+					<h5>热门评论</h5>
+					<p><span>暂无相关评论</span></p>
+				</div>
+			</div>
+		</div>
+		<footer class="footer footer2">
+			<p><input type="text" placeholder="说点什么吧"><label for="">发表</label></p>
+		</footer>
+	</div>
+</body>
+<script src="js/setfontsize.js"></script>
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script src="js/iscroll4.js"></script>
+<script src="js/shouc.js"></script>
+    <script>
+	      var menuPage=new iScroll("main",{
+	      onBeforeScrollStart:function(e){
+	        var tagName=e.target.nodeName.toLowerCase();
+	        if(tagName!="input" && tagName!="select" && tagName!="textarea" && tagName!="a"){
+	          e.preventDefault(); 
+	           }   
+	         }
+
+	      })
+          
+
+    </script>
+</html>

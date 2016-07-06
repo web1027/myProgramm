@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+	<title>出游问答</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/group.css">
+</head>
+<body>
+	<div class="box">
+		<header class="header">
+			<a href="tips.html" class="left"></a>
+			<h1>出游问答</h1>
+		</header>
+		<div class="main" id="main">
+			<div>
+				<!-- <ul class="traver_dls">
+						<li><a href="">
+							<dl>
+								<dt><img src="img/traver_1.png" alt=""></dt>
+								<dd>
+									<h5>跟团游机票怎么拿，是否与当天在机场办理</h5>
+									<p>2016-05=19 09:45:25</p>
+								</dd>
+							</dl>
+						</a></li>
+						<li><a href="">
+							<dl>
+								<dt><img src="img/traver_1.png" alt=""></dt>
+								<dd>
+									<h5>跟团游机票怎么拿，是否与当天在机场办理当天在机场办理</h5>
+									<p>2016-05=19 09:45:25</p>
+								</dd>
+							</dl>
+						</a></li>
+				</ul> -->
+			</div>
+		</div>
+	</div>
+</body>
+<script src="js/setfontsize.js"></script>
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/iscroll4.js"></script>
+<script src="js/traver.js"></script>
+    <script>
+	      var menuPage=new iScroll("main",{
+	      onBeforeScrollStart:function(e){
+	        var tagName=e.target.nodeName.toLowerCase();
+	        if(tagName!="input" && tagName!="select" && tagName!="textarea" && tagName!="a"){
+	          e.preventDefault(); 
+	           }   
+	         }
+	      })
+        menuPage.refresh();
+
+    </script>
+</html>

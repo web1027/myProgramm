@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+	<title>门票团购详情</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/group.css">
+</head>
+<body>
+	<div class="box">
+		<header class="header">
+			<a href="ticket.html" class="left"></a>
+			<h1>门票团购</h1>
+			<a href="" class="right right1"></a>
+			<img src="img/1.png" alt="" class="shoucang" id="favBtn">
+		</header>
+		<div class="main" id="main">
+			<div>
+				<dl class="xq_item">
+					<dt><img src="img/3.png" alt=""></dt>
+					<dd>
+					   <ul class="xq_price">
+						   <li class="on"><a href="">13.0元</a></li>
+						   <li><a href="">15.0元</a></li>
+						   <li><a href="">8.6折</a></li>
+					   </ul>
+					   <h2 id="title">昆明动物园成人票</h2>
+					   <p>剩余时间：260天<span>立即购买</span></p>
+					</dd>
+				</dl>
+				<div class="xq_list">
+					<div class="list_text">
+						<h3><span></span>商品介绍</h3>
+						<ul>
+							<li><a href="">地址：五华区青年路92号</a></li>
+							<li><a href="">地铁：距穿心鼓楼站约559米</a></li>
+							<li><a href="">电话：0871-65154546</a></li>
+							<li><a href="">预约提醒</a></li>
+							<li><a href="">购买后预约请致电：18722629007或0871-66377196</a></li>
+                            <li><a href="">套餐内容单价数量/规格小计</a></li>
+							<li><a href="">昆明动物园成人票￥151张￥15</a></li>
+							<li><a href="">价值：￥15</a></li>
+						</ul>
+						<p>昆明动物园又名圆通山动物园，位于昆明市市区东北青年路北段的圆通山，建立于1953年，现展出200多种云南特产动物及国内外珍惜动物，是全国十佳动物园和七大动物园之一。为昆明八景之一的圆通山刑如一片柳叶，东西长而南北窄，总面积约26公顷，是昆明市区观赏内容最丰富，游人最多的公园，年游人量曾达到300万人次。其中，花潮、动物。古寺，尤为引人。著名的“圆通花潮”也是园内的最大的特色之一，昆明圆通山与武汉东湖、北京玉渊潭公园、大连旅顺、青岛中山公园、杭州太子湾、广州雕塑公园并列为全国七大最负盛名的樱花观赏圣地。</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="footer footer1">
+			<p><input type="text" placeholder="说点什么吧"><label for="">0</label></p>
+		</footer>
+	</div>
+</body>
+<script src="js/setfontsize.js"></script>
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script src="js/iscroll4.js"></script>
+<script src="js/shouc.js"></script>
+    <script>
+	      var menuPage=new iScroll("main",{
+	      onBeforeScrollStart:function(e){
+	        var tagName=e.target.nodeName.toLowerCase();
+	        if(tagName!="input" && tagName!="select" && tagName!="textarea" && tagName!="a"){
+	          e.preventDefault(); 
+	           }   
+	         }
+
+	      })
+          
+
+    </script>
+</html>

@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+	<title>关于我们</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/group.css">
+</head>
+<body>
+	<div class="box">
+		<header class="header">
+			<a href="more.html" class="left"></a>
+			<h1>关于我们</h1>
+		</header>
+		<div class="main" id="main">
+			<div>
+				<div class="about_text">
+					<h3>关于我们</h3>
+					<p>昆明旅游网————为您提供最新的昆明旅游资讯！</p>
+					<p>昆明旅游网为您提供了最新最全面的昆明旅游信息，其中包括旅游景点、游记攻略、线路推荐、酒店住宿、旅游热点、购物中心、门票团购等，功能齐全。</p>
+					<p>该客户端向广大用户展示了一个大型的昆明旅游移动互联网门户平台，以便捷的游览方式，强大的应用功能，最新的资讯信息，为广大用户展示了一个内容丰富的平台，不断地为您更新，让您爱不释手。</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script src="js/setfontsize.js"></script>
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/iscroll4.js"></script>
+    <script>
+	      var menuPage=new iScroll("main",{
+	      onBeforeScrollStart:function(e){
+	        var tagName=e.target.nodeName.toLowerCase();
+	        if(tagName!="input" && tagName!="select" && tagName!="textarea" && tagName!="a"){
+	          e.preventDefault(); 
+	           }   
+	         }
+	      })
+     
+
+    </script>
+</html>

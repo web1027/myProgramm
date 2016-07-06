@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+	<title>小贴士</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/group.css">
+</head>
+<body>
+	<div class="box">
+		<header class="header">
+			<a href="" class="left"></a>
+			<h1>小贴士</h1>
+		</header>
+		<div class="main" id="main">
+			<div>
+				<ul class="tips_list">
+					<li>
+						<a href="Weather.html">
+							<dl>
+								<dt><img src="img/tips_1.png" alt=""></dt>
+								<dd><p>天气<br><span>Weather</span></p></dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="tip.html">
+							<dl>
+								<dt><img src="img/tips_2.png" alt=""></dt>
+								<dd><p>温馨提示<br><span>Tips</span></p></dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="best.html">
+							<dl>
+								<dt><img src="img/tips_3.png" alt=""></dt>
+								<dd><p>最佳旅行时间<br><span>Best travel time</span></p></dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="activities.html">
+							<dl>
+								<dt><img src="img/tips_4.png" alt=""></dt>
+								<dd><p>特色活动<br><span>Featured Activities</span></p></dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="city.html">
+							<dl>
+								<dt><img src="img/tips_5.png" alt=""></dt>
+								<dd><p>城市导览<br><span>City Guides</span></p></dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="phone.html">
+							<dl>
+								<dt><img src="img/tips_6.png" alt=""></dt>
+								<dd><p>服务电话<br><span>Service Phone</span></p></dd>
+							</dl>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+<script src="js/setfontsize.js"></script>
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/iscroll4.js"></script>
+    <script>
+      var menuPage=new iScroll("main",{
+      onBeforeScrollStart:function(e){
+        var tagName=e.target.nodeName.toLowerCase();
+        if(tagName!="input" && tagName!="select" && tagName!="textarea" && tagName!="a"){
+          e.preventDefault(); 
+           }   
+         }
+      })
+     
+
+    </script>
+</html>

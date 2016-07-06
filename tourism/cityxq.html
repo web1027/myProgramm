@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+	<title>城市导游详情页面</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/group.css">
+</head>
+<body>
+	<div class="box">
+		<header class="header">
+			<a href="city.html" class="left"></a>
+			<h1>详情</h1>
+			<a href="" class="right right1"></a>
+			<img src="img/1.png" alt="" class="shoucang" id="favBtn">
+		</header>
+		<div class="main" id="main">
+			<div>
+				<div class="traver_xq">
+					<h4 id="title">寻甸回族彝族自治区</h4>
+					<p>
+						<span>2016-05-19 10:13</span><small>热门</small>
+					</p>
+					<img src="img/city_1.png" alt="">
+					<p>　　寻甸回族彝族自治县（简称寻甸县），云南省昆明市辖县。地处云南省东北部，是湞东北之要冲，贵昆铁路，昆曲、嵩待高速公路从县内经过，境内乡乡通了油路，交通比较便捷。全县辖1个街道办事处、9个镇、4个乡，常住人口45.7万人（2010年），居住着汉、回、彝、苗等16种民族，少数民族人口11万人，占21.8%。县人民政府驻仁德街道。</p>
+					<h5>热门评论</h5>
+					<p><span>暂无相关评论</span></p>
+				</div>
+			</div>
+		</div>
+		<footer class="footer footer2">
+			<p><input type="text" placeholder="说点什么吧"><label for="">发表</label></p>
+		</footer>
+	</div>
+</body>
+<script src="js/setfontsize.js"></script>
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script src="js/iscroll4.js"></script>
+<script src="js/shouc.js"></script>
+    <script>
+	      var menuPage=new iScroll("main",{
+	      onBeforeScrollStart:function(e){
+	        var tagName=e.target.nodeName.toLowerCase();
+	        if(tagName!="input" && tagName!="select" && tagName!="textarea" && tagName!="a"){
+	          e.preventDefault(); 
+	           }   
+	         }
+
+	      })
+          
+
+    </script>
+</html>

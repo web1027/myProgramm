@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+	<title>意见反馈</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/group.css">
+</head>
+<body>
+	<div class="box">
+		<header class="header">
+			<a href="more.html" class="left"></a>
+			<h1>更多</h1>
+		</header>
+		<div class="main" id="main" style="background:#F8F8F8;">
+			<div>
+				<form action="" class="feedback_form">
+					<p><label for="">电话<span>*</span></label><input type="text" placeholder="输入您的电话"></p>
+					<p><label for="">标题<span>*</span></label><input type="text" placeholder="输入您的标题"></p>
+					<p><label for="">内容<span>*</span></label><textarea name="" id="" cols="30" rows="10"></textarea></p>
+					<button>发布</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+<script src="js/setfontsize.js"></script>
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/iscroll4.js"></script>
+    <script>
+	      var menuPage=new iScroll("main",{
+	      onBeforeScrollStart:function(e){
+	        var tagName=e.target.nodeName.toLowerCase();
+	        if(tagName!="input" && tagName!="select" && tagName!="textarea" && tagName!="a"){
+	          e.preventDefault(); 
+	           }   
+	         }
+	      })
+     
+
+    </script>
+</html>
